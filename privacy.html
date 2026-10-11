@@ -37,7 +37,7 @@
 
   <h2>What we collect</h2>
   <ul>
-    <li><strong>Your Google account basics.</strong> When you sign in with Google we receive your name, email address, and a Google account identifier. This is only used to create your account and keep your records tied to you.</li>
+    <li><strong>Your sign-in account basics.</strong> When you sign in with Google or Apple we receive your name, email address, and an account identifier from that provider. This is only used to create your account and keep your records tied to you. If you use Apple's "Hide My Email", we only ever see the relay address.</li>
     <li><strong>Your study sessions.</strong> For each session: start and end time, planned length, whether it was completed, abandoned, or broken, and the label you chose (such as a subject, chapter, or task).</li>
     <li><strong>Which app interrupted a session.</strong> If you grant Usage Access and leave The Bunker during a session, the app records the name of the app you opened, so your session history can show why it broke. We do not collect your general app usage history.</li>
     <li><strong>A username, if you choose one.</strong> To add friends you pick a username. Friends must be added by exact username and accepted by both people; there is no search or suggestions. Once accepted, a friend can see your username, whether you are studying right now or when you last studied, and — only inside a challenge you both joined — your total minutes for that challenge. Nobody ever sees your session list, labels, or voice notes. You can leave the "studying now" status off in Friends.</li>
@@ -58,7 +58,7 @@
   </ul>
 
   <h2>Where it is stored</h2>
-  <p>Account and session data is stored with <strong>Supabase</strong> (our database and sign-in provider). Voice notes are stored with <strong>Cloudflare R2</strong>. Sign-in is handled by <strong>Google</strong>, and notifications are delivered by <strong>Google Firebase Cloud Messaging</strong>. These providers process data only on our behalf. Data is encrypted in transit, and database rules ensure each account can read only its own records. Some providers may store data on servers outside India.</p>
+  <p>Account and session data is stored with <strong>Supabase</strong> (our database and sign-in provider). Voice notes are stored with <strong>Cloudflare R2</strong>. Sign-in is handled by <strong>Google</strong> or <strong>Apple</strong> (your choice), and notifications are delivered by <strong>Google Firebase Cloud Messaging</strong>. These providers process data only on our behalf. Data is encrypted in transit, and database rules ensure each account can read only its own records. Some providers may store data on servers outside India.</p>
 
   <h2>Sharing</h2>
   <p>We do not sell, rent, or share your personal data with anyone for advertising or marketing. We disclose data only to the service providers above, or if required by law.</p>
